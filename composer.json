@@ -1,0 +1,17 @@
+{
+    "name": "asbamboo/template",
+    "description": "模板引擎",
+    "type": "library",
+    "require": {
+        "twig/twig": "^2.4"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Lichunyin",
+            "email": "licy2013@aliyun.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
