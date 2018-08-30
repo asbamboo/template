@@ -14,7 +14,7 @@ class Template implements TemplateInterface
      *
      * @var \Twig_Environment
      */
-    private $Twig;
+    protected $Twig;
 
     public function __construct($template_dir = [], $cache_dir = false)
     {
@@ -31,5 +31,19 @@ class Template implements TemplateInterface
     {
         $Template   = $this->Twig->load($path);
         return $Template->render($assign_data);
+    }
+
+    /**
+     * 如果调用的方法这个类不存在，默认在成员变量$twig里面查找。
+     *
+     * @param string $method
+     * @param array|null $arguments
+     * @return mixed
+     */
+    public function __call($method, $arguments)
+    {
+        if(method_exists($this->Twig, $method)){
+            return $this->Twig->{$method}(...$arguments);
+        }
     }
 }
