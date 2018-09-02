@@ -16,6 +16,11 @@ class Template implements TemplateInterface
      */
     protected $Twig;
 
+    /**
+     *
+     * @param array $template_dir
+     * @param boolean $cache_dir
+     */
     public function __construct($template_dir = [], $cache_dir = false)
     {
         $Loader     = new \Twig_Loader_Filesystem($template_dir);
