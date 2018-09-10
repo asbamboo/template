@@ -1,17 +1,22 @@
 {
     "name": "asbamboo/template",
-    "description": "模板引擎",
-    "type": "library",
-    "require": {
-        "twig/twig": "^2.4"
-    },
     "license": "BSD-3-Clause",
+    "type": "library",
     "authors": [
         {
             "name": "Lichunyin",
             "email": "licy2013@aliyun.com"
         }
     ],
+    "description": "模板引擎",
+    "require": {
+        "php": "^7.2",
+        "asbamboo/autoload": "^1.0",
+        "twig/twig": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    },
     "prefer-stable": true,
     "minimum-stability": "dev"
 }
