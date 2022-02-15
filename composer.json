@@ -1,6 +1,5 @@
 {
     "name": "asbamboo/template",
-    "license": "BSD-3-Clause",
     "type": "library",
     "authors": [
         {
@@ -11,7 +10,7 @@
     "description": "模板引擎",
     "require": {
         "php": "^7.2",
-        "asbamboo/autoload": "^1.0",
+        "asbamboo/autoload": "dev-master",
         "twig/twig": "^2.4"
     },
     "require-dev": {
